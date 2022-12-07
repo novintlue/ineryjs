@@ -7,7 +7,15 @@
 
 > Run npm install
 
-> Run command `npm run transfer`
+> Command to run
+**For Create token**
+> `npm run create`
+**For Issue token**
+> `npm run issue`
+**For Transfer token**
+> `npm run transfer`
+**For Retire token**
+> `npm run retire`
 
 # FROM INERY
 # ineryjs
