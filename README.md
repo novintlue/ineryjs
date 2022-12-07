@@ -1,25 +1,34 @@
 # DOC
 
 ## How to run
-> Copy .env.example and set environment
+- Copy .env.example and set environment
+- set TOKEN symbol with new uniqe symbol for your token
+- Run npm install
+- Command to run TOKEN
+  **For Create token**
+  > `npm run create-token`
 
-> set TOKEN symbol with new uniqe symbol for your token
+  **For Issue token**
+  > `npm run issue`
 
-> Run npm install
+  **For Transfer token**
+  > `npm run transfer`
 
-> Command to run
+  **For Retire token**
+  > `npm run retire`
 
-**For Create token**
-> `npm run create`
+- Command to run CRUD
+  **For Create data**
+  > `npm run write-data`
 
-**For Issue token**
-> `npm run issue`
+  **For delete data**
+  > `npm run delete-data`
 
-**For Transfer token**
-> `npm run transfer`
+  **For update data**
+  > `npm run update-data`
 
-**For Retire token**
-> `npm run retire`
+  **For read data**
+  > `npm run read-data`
 
 # FROM INERY
 # ineryjs

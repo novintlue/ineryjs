@@ -11,7 +11,9 @@
     "issue": "node ./service_token/issue.mjs",
     "retire": "node ./service_token/retire.mjs",
     "write-data": "node ./service_crud/create.mjs",
-    "delete-data": "node ./service_crud/delete.mjs"
+    "delete-data": "node ./service_crud/delete.mjs",
+    "read-data": "node ./service_crud/read.mjs",
+    "update-data": "node ./service_crud/update.mjs"
   },
   "author": "Inery",
   "license": "MIT",
