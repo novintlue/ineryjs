@@ -6,7 +6,10 @@
   "scripts": {
     "doc": "jsdoc -c jsdoc.json",
     "build-web": "webpack --config webpack.config.js",
-    "transfer": "node ./service/transfer.mjs"
+    "transfer": "node ./service/transfer.mjs",
+    "create": "node ./service/create.mjs",
+    "issue": "node ./service/issue.mjs",
+    "retire": "node ./service/retire.mjs"
   },
   "author": "Inery",
   "license": "MIT",

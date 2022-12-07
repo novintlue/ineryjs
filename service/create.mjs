@@ -9,7 +9,7 @@ const private_key = process.env.PRIVATE_KEY;
 
 const account = process.env.INERY_ACCOUNT
 const actor = process.env.INERY_ACCOUNT
-const token = process.env.TOKEN_TRANSFER
+const token = process.env.TOKEN
 const signature  = new JsSignatureProvider([private_key]);
 
 // calling API
@@ -19,14 +19,14 @@ const api = new Api({
 })
 
 // A Function to create new data in our Valued Smart Contract, and call "create" function on our Smart contract
-async function create(from, to, quantity, memo){
+async function create(issuer, maximum_supply){
     try{
         // create new transaction and sign it
         const tx = await api.transact({
             actions:[
                 {
                   account,
-                  name:"transfer",
+                  name:"create",
                   authorization:[
                         {
                             actor,
@@ -34,7 +34,7 @@ async function create(from, to, quantity, memo){
                         }
                     ],
                     data:{
-                        from, to, quantity, memo
+                        issuer, maximum_supply
                     }
                 }
             ]
@@ -48,4 +48,4 @@ async function create(from, to, quantity, memo){
 }
 
 // call RPC that we created in create function
-create(actor, "inery", token, "Free From RPC")
+create(actor, token)

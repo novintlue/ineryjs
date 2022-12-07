@@ -1,7 +1,9 @@
 # DOC
 
 ## How to run
-> Copy .env.example and set environtmen
+> Copy .env.example and set environment
+
+> set TOKEN symbol with new uniqe symbol for your token
 
 > Run npm install
 
