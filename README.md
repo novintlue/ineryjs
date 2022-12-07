@@ -1,3 +1,13 @@
+# DOC
+
+## How to run
+> Copy .env.example and set environtmen
+
+> Run npm install
+
+> Run command `npm run transfer`
+
+# FROM INERY
 # ineryjs
 Javascript API for integration with Inery-based blockchains using Inery RPC API.  
 Documentation can be found in docs folder.  
